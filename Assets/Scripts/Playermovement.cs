@@ -42,3 +42,10 @@ public class Playermovement : MonoBehaviour
         }
     }
 }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+            //console.log()
+        //}
+
+    //}
+
