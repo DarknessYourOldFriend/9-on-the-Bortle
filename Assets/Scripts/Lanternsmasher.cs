@@ -16,7 +16,7 @@ public class Lanternsmasher : MonoBehaviour
         if (thisCollision.GetComponent<Collider2D>().tag == "Enemy")
         {
             Debug.Log("The Smasher hit " + thisCollision.name);
-            //Destroy(thisCollision.gameObject);
+            Destroy(thisCollision.gameObject);
         }
     }
 }
