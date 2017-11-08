@@ -13,7 +13,7 @@ public class Lanternsmasher : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D thisCollision)
     {
-        if (thisCollision.GetComponent<Collider2D>().tag == "Enemy")
+        if ((thisCollision.GetComponent<Collider2D>().tag == "Enemy") && (Input.GetKeyDown(KeyCode.Space)))
         {
             Debug.Log("The Smasher hit " + thisCollision.name);
             Destroy(thisCollision.gameObject);
