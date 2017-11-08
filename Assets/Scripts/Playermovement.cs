@@ -22,6 +22,7 @@ public class Playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        smasher.overEnemy = false;
         playerPosition = GameObject.Find("Player").transform.position.y;
         rb.velocity = new Vector3(horizonSpeed * Time.deltaTime, 0, 0); //Player is contantly moving horizontally
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
@@ -45,6 +46,10 @@ public class Playermovement : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
         {
             Debug.Log("It works");
+        }
+        else if (smasher.overEnemy == false)
+        {
+            Debug.Log("Update was the thing you needed to do");
         }
 
     }

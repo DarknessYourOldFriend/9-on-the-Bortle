@@ -6,10 +6,12 @@ public class Lanternsmasher : MonoBehaviour
 {
     Collider2D thisCollision;
     public bool overEnemy = false;
+    Playermovement movement;
 
     void Start()
     {
         thisCollision = GetComponent<Collider2D>();
+        movement = GetComponent<Playermovement>();
     }
     void OnTriggerStay2D(Collider2D thisCollision)
     {
@@ -17,7 +19,6 @@ public class Lanternsmasher : MonoBehaviour
         {
             Debug.Log("The Smasher hit " + thisCollision.name);
             overEnemy = true;
-            //Destroy(thisCollision.gameObject);
         }
         }
     }
