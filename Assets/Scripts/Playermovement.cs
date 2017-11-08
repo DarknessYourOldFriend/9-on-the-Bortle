@@ -42,11 +42,10 @@ public class Playermovement : MonoBehaviour
             position.y -= warpDown;
             transform.position = position;
         }
-        //if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
-        //{
-            //Debug.Log("It works");
-            //Destroy(smasher.thisCollision.gameObject);
-        //}
+        if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
+        {
+            Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
+        }
 
     }
 }
