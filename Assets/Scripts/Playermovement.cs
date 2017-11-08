@@ -45,6 +45,7 @@ public class Playermovement : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
         {
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
+            Destroy(smasher.collidedWith.gameObject);
         }
 
     }
