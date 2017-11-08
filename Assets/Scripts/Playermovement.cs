@@ -9,19 +9,21 @@ public class Playermovement : MonoBehaviour
     public float warpUp = 3.0f; //Position of player changes without physics
     public float warpDown = -3.0f;
     private float playerPosition;
+    Lanternsmasher smasher;
     Rigidbody2D rb;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        smasher = GetComponent<Lanternsmasher>();
     }
 
     // Update is called once per frame
     void Update()
     {
         playerPosition = GameObject.Find("Player").transform.position.y;
-        rb.velocity = new Vector3(horizonSpeed*Time.deltaTime, 0, 0); //Player is contantly moving horizontally
+        rb.velocity = new Vector3(horizonSpeed * Time.deltaTime, 0, 0); //Player is contantly moving horizontally
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
         {
             //rb.velocity = new Vector3(horizonSpeed, +playerSpeed, 0);
@@ -40,12 +42,11 @@ public class Playermovement : MonoBehaviour
             position.y -= warpDown;
             transform.position = position;
         }
+        if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
+        {
+            Debug.Log("It works");
+        }
+
     }
 }
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-            //console.log()
-        //}
-
-    //}
 
