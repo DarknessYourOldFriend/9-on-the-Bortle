@@ -269,6 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1001 &53538180
 Prefab:
@@ -821,6 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1001 &353476630
 Prefab:
@@ -1070,6 +1072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!61 &675949453
 BoxCollider2D:
@@ -1472,6 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!4 &900230435 stripped
 Transform:
@@ -1615,6 +1619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1001 &917367055
 Prefab:
@@ -2088,6 +2093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1 &1266465755
 GameObject:
@@ -2428,6 +2434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!4 &1491064893 stripped
 Transform:
@@ -2571,6 +2578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1 &1553404166
 GameObject:
@@ -2709,6 +2717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1 &1652608160
 GameObject:
@@ -2814,6 +2823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!61 &1782784401
 BoxCollider2D:
@@ -6586,6 +6596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1 &1958184386
 GameObject:
@@ -6724,6 +6735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1 &1970838922
 GameObject:
@@ -6756,6 +6768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!61 &1970838924
 BoxCollider2D:
@@ -7000,6 +7013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1001 &2060908988
 Prefab:
@@ -7194,6 +7208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
 --- !u!1001 &2081798755
 Prefab:
@@ -7388,4 +7403,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCollision: {fileID: 0}
   overEnemy: 0
