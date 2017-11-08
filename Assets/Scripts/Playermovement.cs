@@ -49,7 +49,7 @@ public class Playermovement : MonoBehaviour
         }
         else if (smasher.overEnemy == false)
         {
-            Debug.Log("Update was the thing you needed to do");
+            //Debug.Log("Update was the thing you needed to do");
         }
 
     }
