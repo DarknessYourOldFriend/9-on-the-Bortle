@@ -21,7 +21,7 @@ public class Playermovement : MonoBehaviour
     void Update()
     {
         playerPosition = GameObject.Find("Player").transform.position.y;
-        rb.velocity = new Vector3(horizonSpeed*Time.deltaTime, 0, 0); //Player is contantly moving horizontally
+        rb.velocity = new Vector3(horizonSpeed, 0, 0); //Player is contantly moving horizontally
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
         {
             //rb.velocity = new Vector3(horizonSpeed, +playerSpeed, 0);
