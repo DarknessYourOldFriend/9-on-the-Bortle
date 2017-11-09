@@ -10,6 +10,7 @@ public class Playermovement : MonoBehaviour
     public float warpDown = -3.0f;
     private float playerPosition;
     Lanternsmasher smasher;
+    Playerlightcontrol lighter;
     Rigidbody2D rb;
 
     // Use this for initialization
@@ -27,8 +28,8 @@ public class Playermovement : MonoBehaviour
 
     void Update()
     {
-    playerPosition = GameObject.Find("Player").transform.position.y;
-       
+        playerPosition = GameObject.Find("Player").transform.position.y;
+
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
         {
             //rb.velocity = new Vector3(horizonSpeed, +playerSpeed, 0);
@@ -51,6 +52,11 @@ public class Playermovement : MonoBehaviour
         {
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
             Destroy(smasher.collidedWith.gameObject);
+            lighter.playerPressed = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Space))
+        {
+            lighter.playerPressed = true;   
         }
 
     }
