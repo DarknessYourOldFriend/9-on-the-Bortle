@@ -20,10 +20,15 @@ public class Playermovement : MonoBehaviour
     }
 
     // Update is called once per frame
+    void FixedUpdate()
+    {
+        rb.velocity = new Vector3(horizonSpeed * Time.deltaTime, 0, 0); //Player is contantly moving horizontally
+    }
+
     void Update()
     {
-        playerPosition = GameObject.Find("Player").transform.position.y;
-        rb.velocity = new Vector3(horizonSpeed * Time.deltaTime, 0, 0); //Player is contantly moving horizontally
+    playerPosition = GameObject.Find("Player").transform.position.y;
+       
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
         {
             //rb.velocity = new Vector3(horizonSpeed, +playerSpeed, 0);
