@@ -54,7 +54,7 @@ public class Playermovement : MonoBehaviour
             Destroy(smasher.collidedWith.gameObject);
             lighter.playerPressed = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             lighter.playerPressed = true;   
         }
