@@ -235,6 +235,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
+        type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114147498322889760, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
