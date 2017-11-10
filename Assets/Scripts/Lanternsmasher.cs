@@ -12,7 +12,6 @@ public class Lanternsmasher : MonoBehaviour
     void Start()
     {
         thisCollision = GetComponent<Collider2D>();
-        movement = GetComponent<Playermovement>();
     }
     void update()
     {

@@ -18,6 +18,7 @@ public class Playermovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         smasher = GetComponent<Lanternsmasher>();
+        smasher.overEnemy = false;
     }
 
     // Update is called once per frame
@@ -28,7 +29,6 @@ public class Playermovement : MonoBehaviour
 
     void Update()
     {
-        smasher.overEnemy = false;
         playerPosition = GameObject.Find("Player").transform.position.y;
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
@@ -53,17 +53,19 @@ public class Playermovement : MonoBehaviour
         {
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
             Destroy(smasher.collidedWith.gameObject);
-            lighter.playerPressed = true;
+            //lighter.playerPressed = true;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            lighter.playerPressed = true;   
-        }
-        else if (smasher.overEnemy == false)
-        {
-            //Debug.Log("Update was the thing you needed to do");
-        }
-
     }
 }
+    //if (Input.GetKeyDown(KeyCode.Space))
+      //  {
+        //    lighter.playerPressed = true;   
+        //}
+        //else if (smasher.overEnemy == false)
+        //{
+            //Debug.Log("Update was the thing you needed to do");
+        //}
+
+    //}
+//}
 
