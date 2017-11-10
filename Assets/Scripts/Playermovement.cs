@@ -11,6 +11,7 @@ public class Playermovement : MonoBehaviour
     private float playerPosition;
     Lanternsmasher smasher;
     Playerlightcontrol lighter;
+    Pressspacetostart gamestart;
     Rigidbody2D rb;
 
     // Use this for initialization
@@ -18,6 +19,7 @@ public class Playermovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         smasher = GetComponent<Lanternsmasher>();
+        gamestart = GetComponent<Pressspacetostart>();
         smasher.overEnemy = false;
     }
 
@@ -54,6 +56,10 @@ public class Playermovement : MonoBehaviour
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
             Destroy(smasher.collidedWith.gameObject);
             //lighter.playerPressed = true;
+        }
+        if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))
+        {
+            gamestart.preGamestate = false;
         }
     }
 }
