@@ -5,21 +5,36 @@ using UnityEngine;
 public class Lanternsmasher : MonoBehaviour
 {
     Collider2D thisCollision;
-    public bool overEnemy = false;
-    Playermovement movement;
+    public bool overEnemy;
+    public GameObject collidedWith;
+
 
     void Start()
     {
         thisCollision = GetComponent<Collider2D>();
         movement = GetComponent<Playermovement>();
     }
-    void OnTriggerStay2D(Collider2D thisCollision)
+    void update()
     {
-        if (thisCollision.GetComponent<Collider2D>().tag == "Enemy") //&& (Input.GetKeyDown(KeyCode.Space)))
-        {
-            Debug.Log("The Smasher hit " + thisCollision.name);
-            overEnemy = true;
-        }
-        }
+        if ((overEnemy == true) && (Input.GetKeyDown(KeyCode.Space)))
+            Destroy(thisCollision.gameObject);
     }
 
+    void OnTriggerEnter2D(Collider2D thisCollision)
+    {
+        if (thisCollision.GetComponent<Collider2D>().tag == "Enemy")
+        {
+            Debug.Log("The Smasher hit " + thisCollision.name);
+            collidedWith = thisCollision.gameObject;
+            overEnemy = true;
+        }
+    }
+    void OnTriggerExit2D(Collider2D thisCollision)
+    {
+        if (thisCollision.GetComponent<Collider2D>().tag == "Enemy")
+        {
+            Debug.Log("It works, just exited:" + thisCollision.name);
+            overEnemy = false;
+        }
+    }
+}

@@ -10,6 +10,7 @@ public class Playermovement : MonoBehaviour
     public float warpDown = -3.0f;
     private float playerPosition;
     Lanternsmasher smasher;
+    Playerlightcontrol lighter;
     Rigidbody2D rb;
 
     // Use this for initialization
@@ -20,11 +21,16 @@ public class Playermovement : MonoBehaviour
     }
 
     // Update is called once per frame
+    void FixedUpdate()
+    {
+        rb.velocity = new Vector3(horizonSpeed * Time.deltaTime, 0, 0); //Player is contantly moving horizontally
+    }
+
     void Update()
     {
         smasher.overEnemy = false;
         playerPosition = GameObject.Find("Player").transform.position.y;
-        rb.velocity = new Vector3(horizonSpeed * Time.deltaTime, 0, 0); //Player is contantly moving horizontally
+
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
         {
             //rb.velocity = new Vector3(horizonSpeed, +playerSpeed, 0);
@@ -45,7 +51,13 @@ public class Playermovement : MonoBehaviour
         }
         if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
         {
-            Debug.Log("It works");
+            Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
+            Destroy(smasher.collidedWith.gameObject);
+            lighter.playerPressed = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            lighter.playerPressed = true;   
         }
         else if (smasher.overEnemy == false)
         {
