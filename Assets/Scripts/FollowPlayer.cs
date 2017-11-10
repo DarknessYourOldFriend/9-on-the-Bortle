@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FollowPlayer : MonoBehaviour {
     public Transform followObject; //Slide object into this slot to use their transform
     public float offset;

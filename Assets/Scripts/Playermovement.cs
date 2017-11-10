@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Playermovement : MonoBehaviour
 {
     //public float playerSpeed = 1.0f; //Speed of player input

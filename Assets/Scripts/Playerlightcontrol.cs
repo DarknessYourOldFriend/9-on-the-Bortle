@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Playerlightcontrol : MonoBehaviour {
     public bool playerPressed;
     public Light playerLight;

@@ -5,20 +5,20 @@ using UnityEngine;
 public class Pressspacetostart : MonoBehaviour {
     public bool preGamestate = true;
     Rigidbody2D rb;
-    AudioSource song;
+    //AudioSource song;
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
-        song = GetComponent<AudioSource>();
+        //song = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
 	void Update () {
 		if (preGamestate == false)
         {
-            rb.WakeUp();
-            song.Play();
+            this.rb.WakeUp();
+            //this.song.Play();
         }
     }
 }
