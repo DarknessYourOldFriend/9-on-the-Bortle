@@ -7,6 +7,7 @@ public class Lanternsmasher : MonoBehaviour
 {
     Collider2D thisCollision;
     public bool overEnemy;
+    public bool songCue = false;
     public GameObject collidedWith;
 
 
@@ -28,6 +29,11 @@ public class Lanternsmasher : MonoBehaviour
             collidedWith = thisCollision.gameObject;
             overEnemy = true;
         }
+
+        if (thisCollision.GetComponent<Collider2D>().tag == "Songcue")
+        {
+            songCue = true;
+        }
     }
     void OnTriggerExit2D(Collider2D thisCollision)
     {
@@ -35,6 +41,10 @@ public class Lanternsmasher : MonoBehaviour
         {
             Debug.Log("It works, just exited:" + thisCollision.name);
             overEnemy = false;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Songcue")
+        {
+            songCue = false;
         }
     }
 }

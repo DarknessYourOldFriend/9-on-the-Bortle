@@ -12,15 +12,15 @@ public class Playermovement : MonoBehaviour
     private float playerPosition;
     Lanternsmasher smasher;
     Playerlightcontrol lighter;
-    Pressspacetostart gamestart;
     Rigidbody2D rb;
+    AudioSource song;
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         smasher = GetComponent<Lanternsmasher>();
-        gamestart = GetComponent<Pressspacetostart>();
+        song = GetComponent<AudioSource>();
         smasher.overEnemy = false;
     }
 
@@ -58,10 +58,15 @@ public class Playermovement : MonoBehaviour
             Destroy(smasher.collidedWith.gameObject);
             //lighter.playerPressed = true;
         }
-        if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))
+        if (smasher.songCue == true)
         {
-            gamestart.preGamestate = false;
+            song.Play();
         }
+
+       // if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))
+        //{
+          //  gamestart.preGamestate = false;
+        //}
     }
 }
     //if (Input.GetKeyDown(KeyCode.Space))
