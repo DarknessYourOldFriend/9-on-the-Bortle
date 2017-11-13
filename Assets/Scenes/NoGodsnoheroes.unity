@@ -504,6 +504,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   preGamestate: 1
+--- !u!114 &44548405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44548401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ac6994284f81204b879e3f9a8f6fba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lanternPrefab: {fileID: 1343888307206664, guid: 98df8bf975e20e14686093aaf76388ba,
+    type: 2}
 --- !u!82 &44548409
 AudioSource:
   m_ObjectHideFlags: 0

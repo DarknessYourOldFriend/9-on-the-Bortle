@@ -38,6 +38,7 @@ public class Playermovement : MonoBehaviour
         {
             //rb.velocity = new Vector3(horizonSpeed, +playerSpeed, 0);
             //Movement without Physics
+            // uses Simplelanechanger script, but horizontal instead of vertical
             Vector3 position = transform.position;
 
             position.y += warpUp;
@@ -52,7 +53,7 @@ public class Playermovement : MonoBehaviour
             position.y -= warpDown;
             transform.position = position;
         }
-        if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true)))
+        if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true))) //Pressing space when player is over a lantern destroys it
         {
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
             Destroy(smasher.collidedWith.gameObject);
