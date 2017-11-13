@@ -6754,6 +6754,53 @@ Transform:
   m_Father: {fileID: 870916180}
   m_RootOrder: 99
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &582907970
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -21.887527
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.46698722
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2.8125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.99994075
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.0014613551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.005843399
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.009073229
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045614999572316, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 199533950969257768, guid: d9535246c33211a4cacd7ca1200ec8cb,
+        type: 2}
+      propertyPath: m_MaxParticleSize
+      value: 0.005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &584124599
 GameObject:
   m_ObjectHideFlags: 0
@@ -11969,7 +12016,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1452240770
+  randomSeed: -2038455317
   InitialModule:
     serializedVersion: 3
     enabled: 1
