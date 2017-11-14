@@ -16,6 +16,7 @@ public class Playermovement : MonoBehaviour
     Playerlightcontrol lighter;
     Rigidbody2D rb;
     AudioSource song;
+    public ParticleSystem starField;
 
     // Use this for initialization
     void Start()
@@ -23,6 +24,7 @@ public class Playermovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         smasher = GetComponent<Lanternsmasher>();
         song = GetComponent<AudioSource>();
+        starField = GetComponent<ParticleSystem>();
         smasher.overEnemy = false;
     }
 
@@ -65,6 +67,16 @@ public class Playermovement : MonoBehaviour
         if ((smasher.songCue == true) && (song.isPlaying == false))
         {
             song.Play();
+        }
+        if (smasher.speedUp == true)
+        {
+            horizonSpeed = 200;
+        }
+
+        if (smasher.starKilling == true)
+        {
+            starField.emission.rateOverTimeMultiplier = -5;        
+                
         }
 
        // if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))

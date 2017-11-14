@@ -10,6 +10,8 @@ public class Lanternsmasher : MonoBehaviour
     public bool songCue = false;
     public GameObject collidedWith;
     public bool isPlaying;
+    public bool speedUp;
+    public bool starKilling;
 
 
     void Start()
@@ -36,6 +38,15 @@ public class Lanternsmasher : MonoBehaviour
             songCue = true;
             isPlaying = true;
         }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Speedup")
+        {
+            speedUp = true;
+        }
+        if ((thisCollision.GetComponent<Collider2D>().tag == "Starkiller") && (starKilling != true))
+        {
+            starKilling = true;
+        }
+
     }
     void OnTriggerExit2D(Collider2D thisCollision)
     {
@@ -47,6 +58,10 @@ public class Lanternsmasher : MonoBehaviour
         if (thisCollision.GetComponent<Collider2D>().tag == "Songcue")
         {
             songCue = false;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller")
+            {
+            starKilling = false;
         }
     }
 }
