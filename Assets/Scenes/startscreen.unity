@@ -179,7 +179,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "What happens to the lights \n\nPress Space to start"
+  m_Text: 'Nine on the Bortle
+
+    by Days n Daze
+
+
+    Press Space to start'
 --- !u!222 &40468382
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class Playermovement : MonoBehaviour
     Playerlightcontrol lighter;
     Rigidbody2D rb;
     AudioSource song;
-    
+
 
     // Use this for initialization
     void Start()
@@ -72,15 +72,21 @@ public class Playermovement : MonoBehaviour
         {
             song.Play();
         }
-        if (smasher.speedUp == true)
-        {
-            horizonSpeed = 200;
-        }
 
-       // if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))
-        //{
-          //  gamestart.preGamestate = false;
-        //}
+        if (smasher.speedUp0 == true)
+        {
+            horizonSpeed = 150;
+
+        if (smasher.speedUp == true)
+            {
+                horizonSpeed = 200;
+            }
+
+            // if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))
+            //{
+            //  gamestart.preGamestate = false;
+            //}
+        }
     }
 }
     //if (Input.GetKeyDown(KeyCode.Space))

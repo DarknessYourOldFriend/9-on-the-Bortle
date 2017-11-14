@@ -10,9 +10,13 @@ public class Lanternsmasher : MonoBehaviour
     public bool songCue = false;
     public GameObject collidedWith;
     public bool isPlaying;
+    public bool speedUp0;
     public bool speedUp;
     public bool starKilling = false;
-    public bool killerTrigger = false;
+    public bool killerTrigger1 = false;
+    public bool killerTrigger2 = false;
+    public bool killerTrigger3 = false;
+    public bool killerTrigger4 = false;
     Starfieldmanager starfield;
 
 
@@ -45,9 +49,25 @@ public class Lanternsmasher : MonoBehaviour
         {
             speedUp = true;
         }
-        if ((thisCollision.GetComponent<Collider2D>().tag == "Starkiller") && (killerTrigger == false))
+        if (thisCollision.GetComponent<Collider2D>().tag == "Speedup0")
         {
-            killerTrigger = true;
+            speedUp0 = true;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller1")
+        {
+            killerTrigger1 = true;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller2")
+        {
+            killerTrigger2 = true;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller3")
+        {
+            killerTrigger3 = true;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller4")
+        {
+            killerTrigger4 = true;
         }
     }
     void OnTriggerExit2D(Collider2D thisCollision)
@@ -61,9 +81,21 @@ public class Lanternsmasher : MonoBehaviour
         {
             songCue = false;
         }
-        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller")
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller1")
             {
-            killerTrigger = false;
+            killerTrigger1 = false;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller2")
+        {
+            killerTrigger2 = false;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller3")
+        {
+            killerTrigger3 = false;
+        }
+        if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller4")
+        {
+            killerTrigger4 = false;
         }
     }
 }

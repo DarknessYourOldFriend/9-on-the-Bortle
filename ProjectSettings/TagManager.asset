@@ -9,6 +9,11 @@ TagManager:
   - Songcue
   - Speedup
   - Starkiller
+  - Starkiller1
+  - Starkiller2
+  - Starkiller3
+  - Starkiller4
+  - Speedup0
   layers:
   - Default
   - TransparentFX
