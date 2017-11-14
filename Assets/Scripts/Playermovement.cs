@@ -9,6 +9,7 @@ public class Playermovement : MonoBehaviour
     public float horizonSpeed = 1.0f; //Speed of horizontal auto movement
     public float warpUp = 3.0f; //Position of player changes without physics
     public float warpDown = -3.0f;
+    public GameObject explosion;
     private float playerPosition;
     Lanternsmasher smasher;
     Playerlightcontrol lighter;
@@ -56,6 +57,8 @@ public class Playermovement : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true))) //Pressing space when player is over a lantern destroys it
         {
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
+            Instantiate(explosion, transform.position, transform.rotation);
+
             Destroy(smasher.collidedWith.gameObject);
             //lighter.playerPressed = true;
         }
