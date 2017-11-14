@@ -12,11 +12,13 @@ public class Playermovement : MonoBehaviour
     public GameObject explosion;
     public bool explosions = true;
     private float playerPosition;
+    //public ParticleSystem starfield;
+    //public ParticleSystem.EmissionModule emission;
     Lanternsmasher smasher;
     Playerlightcontrol lighter;
     Rigidbody2D rb;
     AudioSource song;
-    public ParticleSystem starField;
+    
 
     // Use this for initialization
     void Start()
@@ -24,7 +26,8 @@ public class Playermovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         smasher = GetComponent<Lanternsmasher>();
         song = GetComponent<AudioSource>();
-        starField = GetComponent<ParticleSystem>();
+        //starfield = GetComponent<ParticleSystem>();
+        //emission = GetComponent<ParticleSystem.EmissionModule>();
         smasher.overEnemy = false;
     }
 
@@ -37,6 +40,7 @@ public class Playermovement : MonoBehaviour
     void Update()
     {
         playerPosition = GameObject.Find("Player").transform.position.y;
+        //var emission = starfield.emission;
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && (playerPosition != 3)) //!= 3 keeps player from moving too far up (can't believe I didn't think of that sooner)  
         {
@@ -71,12 +75,6 @@ public class Playermovement : MonoBehaviour
         if (smasher.speedUp == true)
         {
             horizonSpeed = 200;
-        }
-
-        if (smasher.starKilling == true)
-        {
-            starField.emission.rateOverTimeMultiplier = -5;        
-                
         }
 
        // if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))

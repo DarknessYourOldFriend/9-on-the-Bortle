@@ -268,6 +268,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1933827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1221,311 +1222,67 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalPosition.x
       value: -9.66
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
       objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - target: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114147498322889760, guid: ce612508c6f1e6e49bac4b844e856b41,
+    - target: {fileID: 1845648959654988, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114285324493434776, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa,
         type: 2}
-      propertyPath: warpUp
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114147498322889760, guid: ce612508c6f1e6e49bac4b844e856b41,
+      propertyPath: starField
+      value: 
+      objectReference: {fileID: 1095088196}
+    - target: {fileID: 114354438549358536, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa,
         type: 2}
-      propertyPath: warpDown
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.4328506
-      objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_UseFullKinematicContacts
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.1418806
-      objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Constraints
+      propertyPath: starKilling
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
+    - target: {fileID: 114285324493434776, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa,
         type: 2}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_SleepingMode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 50269731489277404, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 61606678575773722, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
-      value: 0.6994504
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
-      value: -0.27235088
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: 0.006018781
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
-      value: -0.6198941
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
-      value: -0.0028182585
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
-      value: 0.5011073
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
-      value: -0.009331318
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
-      value: 0.85694426
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: -0.6948781
-      objectReference: {fileID: 0}
-    - target: {fileID: 60720350777749420, guid: ce612508c6f1e6e49bac4b844e856b41,
-        type: 2}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: -0.27276576
-      objectReference: {fileID: 0}
+      propertyPath: starfield
+      value: 
+      objectReference: {fileID: 1095088196}
     m_RemovedComponents:
-    - {fileID: 114147498322889760, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: ce612508c6f1e6e49bac4b844e856b41, type: 2}
+    - {fileID: 114660691131594918, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &44548401 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1720778500712568, guid: ce612508c6f1e6e49bac4b844e856b41,
+--- !u!114 &44548403 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114354438549358536, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa,
     type: 2}
   m_PrefabInternal: {fileID: 44548400}
---- !u!114 &44548402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44548401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27d32b0a46a6f734f8e101f88a2c0b45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizonSpeed: 100
-  warpUp: 3
-  warpDown: 3
-  explosion: {fileID: 1621146137660590, guid: d9535246c33211a4cacd7ca1200ec8cb, type: 2}
-  explosions: 0
---- !u!114 &44548403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44548401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f6f6dc9b208fb3b43a97c16bbf008441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overEnemy: 0
-  songCue: 0
-  collidedWith: {fileID: 0}
-  isPlaying: 0
-  speedUp: 0
---- !u!114 &44548404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44548401}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 175566b71dba1f34abb1ecae47baee09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preGamestate: 1
---- !u!114 &44548405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44548401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ac6994284f81204b879e3f9a8f6fba1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lanternPrefab: {fileID: 1343888307206664, guid: 98df8bf975e20e14686093aaf76388ba,
-    type: 2}
-  offset: 1
---- !u!114 &44548406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44548401}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee8c4fe99a0fe984a8b2a1d4761f1ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPressed: 0
-  playerLight: {fileID: 789683459}
---- !u!82 &44548409
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44548401}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5c8acc44abdbcc44595c913a70a3fde3, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!1 &44806360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1573,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &48644424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3998,6 +3756,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &111575657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7475,6 +7234,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &191999472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8577,6 +8337,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &204478509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12199,6 +11960,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &286741571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15313,6 +15075,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &346880964
 GameObject:
   m_ObjectHideFlags: 0
@@ -17643,6 +17406,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &411043892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19465,6 +19229,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &433755750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23927,6 +23692,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &556297987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26349,6 +26115,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &613262228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28517,6 +28284,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &675949453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31983,71 +31751,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &789683458
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 789683460}
-  - component: {fileID: 789683459}
-  m_Layer: 0
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &789683459
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 789683458}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 1.6690016
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 1
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &789683460
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 789683458}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.035029937, y: 0.013958172, z: -4.8425717}
-  m_LocalScale: {x: 0.69790953, y: 0.8757485, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1169988135}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &795221673
 GameObject:
   m_ObjectHideFlags: 0
@@ -33058,6 +32761,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &828220351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33560,6 +33264,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &835840043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35640,6 +35345,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &887337402
 GameObject:
   m_ObjectHideFlags: 0
@@ -36050,6 +35756,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &898303262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36284,6 +35991,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &907268478
 GameObject:
   m_ObjectHideFlags: 0
@@ -36454,6 +36162,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &908091522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36956,6 +36665,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &913969544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38404,6 +38114,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &950469062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39736,6 +39447,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &964078426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44646,6 +44358,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1060894943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45738,6 +45451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1095088197}
   - component: {fileID: 1095088196}
+  - component: {fileID: 1095088198}
   - component: {fileID: 1095088195}
   m_Layer: 0
   m_Name: Starfield
@@ -45860,7 +45574,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -86124330
+  randomSeed: -1501150868
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -48318,15 +48032,15 @@ ParticleSystem:
     interiorCollisions: 0
   TriggerModule:
     enabled: 0
-    collisionShape0: {fileID: 0}
+    collisionShape0: {fileID: 1169988135}
     collisionShape1: {fileID: 0}
     collisionShape2: {fileID: 0}
     collisionShape3: {fileID: 0}
     collisionShape4: {fileID: 0}
     collisionShape5: {fileID: 0}
-    inside: 1
+    inside: 0
     outside: 0
-    enter: 0
+    enter: 2
     exit: 0
     radiusScale: 1
   SubModule:
@@ -49130,6 +48844,19 @@ Transform:
   m_Father: {fileID: 159115513}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
+--- !u!114 &1095088198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1095088194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfe77c4ffd255a1439d0d5408d4b9a0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starfield: {fileID: 1095088196}
+  smasher: {fileID: 44548403}
 --- !u!1 &1097533292
 GameObject:
   m_ObjectHideFlags: 0
@@ -52732,7 +52459,7 @@ SpriteRenderer:
   m_MaskInteraction: 0
 --- !u!4 &1169988135 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4888678436451454, guid: ce612508c6f1e6e49bac4b844e856b41,
+  m_PrefabParentObject: {fileID: 4275774272442944, guid: 6f064aab111b4ee4db8ac5a2a8fdfefa,
     type: 2}
   m_PrefabInternal: {fileID: 44548400}
 --- !u!1 &1171909285
@@ -53237,6 +52964,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1186678168
 GameObject:
   m_ObjectHideFlags: 0
@@ -55327,6 +55055,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1235773073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56069,6 +55798,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1252156048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56691,6 +56421,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1270447543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56833,6 +56564,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1270885806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60935,6 +60667,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1369134001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -62037,6 +61770,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1386385197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66471,6 +66205,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1487564674
 GameObject:
   m_ObjectHideFlags: 0
@@ -66627,6 +66362,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1492657589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66995,6 +66731,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1497107216
 GameObject:
   m_ObjectHideFlags: 0
@@ -67285,6 +67022,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1500832942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67667,6 +67405,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1504319063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68861,6 +68600,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1553686795
 GameObject:
   m_ObjectHideFlags: 0
@@ -73783,6 +73523,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1657744736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73925,6 +73666,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1660198454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75987,6 +75729,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1715531290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -77195,6 +76938,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1740691179
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80471,6 +80215,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1827375943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81213,6 +80958,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1843490800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84475,6 +84221,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1896188710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84617,6 +84364,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1898587127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85798,7 +85546,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4917920238286648, guid: 15f3fdcd77abe8d45a741c969f06619a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.4
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 4917920238286648, guid: 15f3fdcd77abe8d45a741c969f06619a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -86933,6 +86681,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1950663535
 GameObject:
   m_ObjectHideFlags: 0
@@ -87675,6 +87424,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1964807681
 GameObject:
   m_ObjectHideFlags: 0
@@ -88297,6 +88047,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &1976243246
 GameObject:
   m_ObjectHideFlags: 0
@@ -88827,6 +88578,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!61 &1986858539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92541,6 +92293,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &2083179134
 GameObject:
   m_ObjectHideFlags: 0
@@ -94123,6 +93876,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   isPlaying: 0
   speedUp: 0
+  starKilling: 0
 --- !u!1 &2117804299
 GameObject:
   m_ObjectHideFlags: 0
