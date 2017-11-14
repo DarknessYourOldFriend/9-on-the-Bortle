@@ -15,7 +15,7 @@ public class Playermovement : MonoBehaviour
     //public ParticleSystem starfield;
     //public ParticleSystem.EmissionModule emission;
     Lanternsmasher smasher;
-    Playerlightcontrol lighter;
+    //Playerlightcontrol lighter;
     Rigidbody2D rb;
     AudioSource song;
 
@@ -66,7 +66,7 @@ public class Playermovement : MonoBehaviour
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
             Instantiate(explosion, transform.position, transform.rotation);
             Destroy(smasher.collidedWith.gameObject);
-            lighter.playerPressed = true;
+            //lighter.playerPressed = true;
         }
         if ((smasher.songCue == true) && (song.isPlaying == false))
         {
