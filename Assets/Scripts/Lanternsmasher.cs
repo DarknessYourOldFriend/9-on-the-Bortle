@@ -9,6 +9,7 @@ public class Lanternsmasher : MonoBehaviour
     public bool overEnemy;
     public bool songCue = false;
     public GameObject collidedWith;
+    public bool isPlaying;
 
 
     void Start()
@@ -33,6 +34,7 @@ public class Lanternsmasher : MonoBehaviour
         if (thisCollision.GetComponent<Collider2D>().tag == "Songcue")
         {
             songCue = true;
+            isPlaying = true;
         }
     }
     void OnTriggerExit2D(Collider2D thisCollision)

@@ -10,6 +10,7 @@ public class Playermovement : MonoBehaviour
     public float warpUp = 3.0f; //Position of player changes without physics
     public float warpDown = -3.0f;
     public GameObject explosion;
+    public bool explosions = true;
     private float playerPosition;
     Lanternsmasher smasher;
     Playerlightcontrol lighter;
@@ -54,15 +55,14 @@ public class Playermovement : MonoBehaviour
             position.y -= warpDown;
             transform.position = position;
         }
-        if ((Input.GetKeyDown(KeyCode.Space) && (smasher.overEnemy == true))) //Pressing space when player is over a lantern destroys it
+        if ((Input.GetKeyDown(KeyCode.Space)) && (smasher.overEnemy == true) && (explosions == true)) //Pressing space when player is over a lantern destroys it
         {
             Debug.Log("It works, just popped:" + smasher.collidedWith.gameObject);
             Instantiate(explosion, transform.position, transform.rotation);
-
             Destroy(smasher.collidedWith.gameObject);
-            //lighter.playerPressed = true;
+            lighter.playerPressed = true;
         }
-        if (smasher.songCue == true)
+        if ((smasher.songCue == true) && (song.isPlaying == false))
         {
             song.Play();
         }

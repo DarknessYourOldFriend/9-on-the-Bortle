@@ -8,14 +8,14 @@ public class Playerlightcontrol : MonoBehaviour {
     public Light playerLight;
 	// Use this for initialization
 	void Start () {
-        playerLight = GetComponent<Light>();
 	}
 
     // Update is called once per frame
     void Update()
     {
         if (playerPressed == true)
-    { 
+    {
+        Debug.Log("Playerpressedtrue");
         playerLight.enabled = true;
     }
         else if (playerPressed == false)
