@@ -6,6 +6,8 @@ public class Starfieldmanager : MonoBehaviour {
     public ParticleSystem starfield;
     public ParticleSystem.EmissionModule emission;
     public Lanternsmasher smasher;
+    public float decayRate = 20;
+    public bool triggered;
     // Use this for initialization
     void Start () {
         starfield = GetComponent<ParticleSystem>();
@@ -14,9 +16,15 @@ public class Starfieldmanager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (smasher.starKilling == true)
+		if ((smasher.killerTrigger == true) && (triggered == false))
         {
-            emission.rateOverTime = new ParticleSystem.MinMaxCurve(10.0f);
+            decayRate -= 5;
+            emission.rateOverTime = new ParticleSystem.MinMaxCurve(decayRate);
+            triggered = true;
+        }
+        else if (smasher.killerTrigger == false)
+        {
+            triggered = false;
         }
 	}
 }

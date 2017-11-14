@@ -269,6 +269,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1933827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1574,6 +1575,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &48644424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3757,6 +3759,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &111575657
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7235,6 +7238,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &191999472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8338,6 +8342,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &204478509
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11961,6 +11966,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &286741571
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15076,6 +15082,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &346880964
 GameObject:
   m_ObjectHideFlags: 0
@@ -17407,6 +17414,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &411043892
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19230,6 +19238,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &433755750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23693,6 +23702,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &556297987
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26116,6 +26126,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &613262228
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28285,6 +28296,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &675949453
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32762,6 +32774,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &828220351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33265,6 +33278,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &835840043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35346,6 +35360,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &887337402
 GameObject:
   m_ObjectHideFlags: 0
@@ -35757,6 +35772,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &898303262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35992,6 +36008,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &907268478
 GameObject:
   m_ObjectHideFlags: 0
@@ -36163,6 +36180,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &908091522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36666,6 +36684,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &913969544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38115,6 +38134,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &950469062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39448,6 +39468,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &964078426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44359,6 +44380,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1060894943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45574,7 +45596,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1501150868
+  randomSeed: -1743575191
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -48857,6 +48879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starfield: {fileID: 1095088196}
   smasher: {fileID: 44548403}
+  decayRate: -1
 --- !u!1 &1097533292
 GameObject:
   m_ObjectHideFlags: 0
@@ -52965,6 +52988,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1186678168
 GameObject:
   m_ObjectHideFlags: 0
@@ -55056,6 +55080,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1235773073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55799,6 +55824,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1252156048
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56422,6 +56448,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1270447543
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56565,6 +56592,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1270885806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60668,6 +60696,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1369134001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -61771,6 +61800,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1386385197
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66206,6 +66236,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1487564674
 GameObject:
   m_ObjectHideFlags: 0
@@ -66363,6 +66394,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1492657589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66732,6 +66764,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1497107216
 GameObject:
   m_ObjectHideFlags: 0
@@ -67023,6 +67056,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1500832942
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -67406,6 +67440,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1504319063
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68601,6 +68636,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1553686795
 GameObject:
   m_ObjectHideFlags: 0
@@ -73524,6 +73560,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1657744736
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73667,6 +73704,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1660198454
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75730,6 +75768,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1715531290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76939,6 +76978,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1740691179
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80216,6 +80256,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1827375943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -80959,6 +81000,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1843490800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84222,6 +84264,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1896188710
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -84365,6 +84408,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1898587127
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85576,6 +85620,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 61538653421308018, guid: 15f3fdcd77abe8d45a741c969f06619a,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.39404306
+      objectReference: {fileID: 0}
+    - target: {fileID: 61538653421308018, guid: 15f3fdcd77abe8d45a741c969f06619a,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.21241397
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15f3fdcd77abe8d45a741c969f06619a, type: 2}
   m_IsPrefabParent: 0
@@ -86682,6 +86736,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1950663535
 GameObject:
   m_ObjectHideFlags: 0
@@ -87425,6 +87480,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1964807681
 GameObject:
   m_ObjectHideFlags: 0
@@ -88048,6 +88104,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &1976243246
 GameObject:
   m_ObjectHideFlags: 0
@@ -88579,6 +88636,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!61 &1986858539
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -92294,6 +92352,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &2083179134
 GameObject:
   m_ObjectHideFlags: 0
@@ -93877,6 +93936,7 @@ MonoBehaviour:
   isPlaying: 0
   speedUp: 0
   starKilling: 0
+  killerTrigger: 0
 --- !u!1 &2117804299
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,12 +11,15 @@ public class Lanternsmasher : MonoBehaviour
     public GameObject collidedWith;
     public bool isPlaying;
     public bool speedUp;
-    public bool starKilling;
+    public bool starKilling = false;
+    public bool killerTrigger = false;
+    Starfieldmanager starfield;
 
 
     void Start()
     {
         thisCollision = GetComponent<Collider2D>();
+        starfield = GetComponent<Starfieldmanager>();
     }
     void update()
     {
@@ -42,11 +45,10 @@ public class Lanternsmasher : MonoBehaviour
         {
             speedUp = true;
         }
-        if ((thisCollision.GetComponent<Collider2D>().tag == "Starkiller") && (starKilling != true))
+        if ((thisCollision.GetComponent<Collider2D>().tag == "Starkiller") && (killerTrigger == false))
         {
-            starKilling = true;
+            killerTrigger = true;
         }
-
     }
     void OnTriggerExit2D(Collider2D thisCollision)
     {
@@ -61,7 +63,7 @@ public class Lanternsmasher : MonoBehaviour
         }
         if (thisCollision.GetComponent<Collider2D>().tag == "Starkiller")
             {
-            starKilling = false;
+            killerTrigger = false;
         }
     }
 }
