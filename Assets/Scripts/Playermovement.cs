@@ -73,7 +73,7 @@ public class Playermovement : MonoBehaviour
             song.Play();
         }
 
-        if (smasher.speedUp0 == true)
+        if (smasher.speedUp0 == true) //Have two collider triggers tagged as "speedUp" and "speedUp0", this changes horizon speed
         {
             horizonSpeed = 150;
 
