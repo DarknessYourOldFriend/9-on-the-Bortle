@@ -11,6 +11,8 @@ public class Playermovement : MonoBehaviour
     public float warpDown = -3.0f;
     public GameObject explosion;
     public bool explosions = true;
+    public float horizonSpeedup0 = 10.0f;
+    public float horizonSpeedup = 10.0f;
     private float playerPosition;
     //public ParticleSystem starfield;
     //public ParticleSystem.EmissionModule emission;
@@ -73,13 +75,13 @@ public class Playermovement : MonoBehaviour
             song.Play();
         }
 
-        if (smasher.speedUp0 == true) //Have two collider triggers tagged as "speedUp" and "speedUp0", this changes horizon speed
+        if (smasher.speedUp0 == true)  //Have two collider triggers tagged as "speedUp" and "speedUp0", this changes horizon speed
         {
-            horizonSpeed = 150;
+            horizonSpeed += horizonSpeedup0 * Time.deltaTime;
 
         if (smasher.speedUp == true)
             {
-                horizonSpeed = 200;
+                horizonSpeed += horizonSpeedup * Time.deltaTime;
             }
 
             // if ((Input.GetKeyDown(KeyCode.Space)) && (gamestart.preGamestate == true))

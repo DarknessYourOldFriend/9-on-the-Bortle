@@ -46,7 +46,9 @@ public class Starfieldmanager : MonoBehaviour {
         {
             Debug.Log("Hit the speed bump, timer up");
             simSpeed += speedUprate * Time.deltaTime;
-            starSpeed.simulationSpeed = simSpeed;//Add Simulation Speed here
+            starSpeed.simulationSpeed = simSpeed;//Add Simulation Speed here 
+            //Going to need to change horizon speed in playermovement to avoid the stuttering effect
+            //speeduplimit0 = 2 means that horizon movement should equal 400 to avoid stutter 
         }
         if ((smasher.speedUp0 == true) && (starSpeed.simulationSpeed < speedUplimit))
         {
