@@ -10,8 +10,8 @@ public class Lanternsmasher : MonoBehaviour
     public bool songCue = false;
     public GameObject collidedWith;
     public bool isPlaying;
-    public bool speedUp0;
-    public bool speedUp;
+    public bool speedUp0 = false;
+    public bool speedUp = false;
     public bool starKilling = false;
     public bool killerTrigger1 = false;
     public bool killerTrigger2 = false;
