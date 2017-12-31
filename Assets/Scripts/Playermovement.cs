@@ -13,6 +13,8 @@ public class Playermovement : MonoBehaviour
     public bool explosions = true;
     public float horizonSpeedup0 = 10.0f;
     public float horizonSpeedup = 10.0f;
+    public float horizonSpeedlimit0 = 400f;
+    public float horizonSpeedlimit = 500f;
     private float playerPosition;
     //public ParticleSystem starfield;
     //public ParticleSystem.EmissionModule emission;
@@ -75,11 +77,11 @@ public class Playermovement : MonoBehaviour
             song.Play();
         }
 
-        if (smasher.speedUp0 == true)  //Have two collider triggers tagged as "speedUp" and "speedUp0", this changes horizon speed
+        if ((smasher.speedUp0 == true) && (horizonSpeed < horizonSpeedlimit0))  //Have two collider triggers tagged as "speedUp" and "speedUp0", this changes horizon speed
         {
             horizonSpeed += horizonSpeedup0 * Time.deltaTime;
 
-        if (smasher.speedUp == true)
+        if ((smasher.speedUp == true) && (horizonSpeed < horizonSpeedlimit))
             {
                 horizonSpeed += horizonSpeedup * Time.deltaTime;
             }
